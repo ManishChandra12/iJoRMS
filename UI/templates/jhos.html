@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{%load staticfiles%}
+
+{% block stylesheet %}
+	<style>
+	</style>
+
+{% endblock %}
+
+
+{%block maincontent%}
+	<div class="stats-header">
+	<h2 class="text-center">Data on {{request.user.username}}</h2>
+	
+		{{extractedSkills}}
+		{{ extractedWorkExp}}		
+		{{extractedEducation}}   		
+		{{extractedCert}}    	
+
+
+	    </div>
+
+
+{% endblock %}

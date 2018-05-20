@@ -1,0 +1,1050 @@
+*Lisp,Parallel programming
+.QL,Multi-paradigm programming language
+.QL,Logic programming language
+.QL,Object-oriented programming language
+A++,Functional programming
+A++,Logic programming
+A++,Imperative programming
+A++,Object-oriented programming
+A++,Multi-paradigm programming language
+A+,Array programming
+ABAP,Structured programming
+ABAP,Imperative programming
+ABAP,Object-oriented programming
+ABC,Procedural programming
+ABC,Structured programming
+ABC,Imperative programming
+ABC,Multi-paradigm programming language
+ACL2,Functional programming
+ACL2,Metaprogramming
+ALGOL,Procedural programming
+ALGOL,Structured programming
+ALGOL,Imperative programming
+ALGOL 58,Procedural programming
+ALGOL 58,Structured programming
+ALGOL 58,Imperative programming language
+ALGOL 60,Procedural programming
+ALGOL 60,Structured programming
+ALGOL 60,Imperative programming
+ALGOL 68,Concurrent programming language
+ALGOL 68,Imperative programming
+ALGOL 68,Multi-paradigm programming language
+ALGOL W,Procedural programming
+ALGOL W,Structured programming
+ALGOL W,Imperative programming
+AMOS,Procedural programming
+AMOS,Imperative programming
+AMPL,Imperative programming
+AMPL,Multi-paradigm programming language
+AMPL,Declarative programming
+ANSI/ISO C Specification Language,declarative with few imperative features.
+APL,Functional programming
+APL,Structured programming
+APL,Array programming
+APL,Modular programming
+ATS,Functional programming
+ATS,Imperative programming
+ATS,Multi-paradigm programming language
+AWK,Procedural programming
+AWK,Data-driven programming
+AWK,Scripting language
+Abstract State Machine Language,Functional programming
+Absys,Logic programming
+ActionScript,"Multi-paradigm: object-oriented , functional, imperative, scripting"
+ActiveVFP,Fourth-generation programming language
+ActiveVFP,Procedural programming
+ActiveVFP,Object-oriented programming
+Ada,Multi-paradigm programming language
+Agda,Functional programming
+AgentSheets,"object-oriented, educational, Conversational Programming"
+AgentSpeak,Agent-oriented programming
+Albatross,"Functional, Imperative, Statically Verified, object-oriented"
+Aldor,Logic programming
+Aldor,Imperative programming
+Aldor,Functional (programming)
+Aldor,Multi-paradigm programming language
+Aldor,Object-oriented (programming)
+Aldor,Dependent type
+Alef,Compiled language
+Alef,Structured programming
+Alef,Concurrent programming
+Algebraic Logic Functional programming language,Functional programming
+Algebraic Logic Functional programming language,Logic programming
+Algebraic Logic Functional programming language,Multi-paradigm programming language
+Alice,Functional programming
+Alice,Concurrent programming language
+Alice,Imperative programming
+Alice,Multi-paradigm programming language
+Alice,Distributed programming
+Alma-0,Logic programming
+Alma-0,Constraint programming
+Alma-0,Imperative programming
+Alma-0,Multi-paradigm programming language
+AmbientTalk,object-oriented  Concurrent Event-driven Reflective
+AngelScript,"Multi-paradigm: scripting, imperative"
+AntLang,Functional programming
+AntLang,Array programming
+AppleScript,Natural language programming
+AppleScript,Scripting language
+AspectJ,Aspect-oriented programming
+Assembly language,Imperative programming
+Assembly language,Unstructured programming
+Asymptote,Imperative programming
+Asymptote,Typesetting
+Ateji PX,Object-oriented programming
+Ateji PX,Pi calculus
+Atom,Functional programming
+Atom,Reactive programming
+Atom,Synchronous programming language
+A\xe2\x99\xaf,Functional (programming)
+A\xe2\x99\xaf,Multi-paradigm programming language
+A\xe2\x99\xaf,Object-oriented (programming)
+BASIC,"Unstructured, later procedural, later object-oriented"
+BCPL,Procedural programming
+BCPL,Structured programming
+BCPL,Imperative programming
+BETA,Object-oriented programming
+BLISS,"Structured, imperative"
+Babbage,Procedural programming
+Babbage,Structured programming
+Babbage,High-level assembler
+Basic4GL,Procedural language
+Basic4ppc,Procedural programming and Event-driven
+BeanShell,Object-oriented programming
+BeanShell,Scripting language
+Beatnik,Stack-based
+Bistro,Object-oriented programming
+Boo,Object-oriented analysis and design
+Brainfuck,Structured programming
+Brainfuck,Imperative programming
+Brainfuck,Esoteric programming language
+Brutus2D,Procedural language
+C*,Parallel programming
+C*,Imperative programming
+C*,Object-oriented programming
+C*,Multi-paradigm programming language
+C++,Functional programming
+C++,Procedural programming
+C++,Generic programming
+C++,Object-oriented programming
+C++,Multi-paradigm programming language
+C--,Imperative programming
+CAL Actor Language,Dataflow programming
+CEEMAC,Visual composition language
+CGOL,Procedural programming
+CGOL,Structured programming
+CGOL,Imperative programming language
+CHILL,Procedural language
+CLACL,Logic programming
+CLU,Procedural programming
+CLU,Object-oriented programming
+CLU,Multi-paradigm programming language
+CMS-2,Imperative programming
+CMS Pipelines,Dataflow
+COBOL,Procedural programming
+COBOL,Imperative programming
+COBOL,Object-oriented programming
+COLA,Multi-paradigm programming language
+COMAL,Structured programming
+CPL,Functional programming
+CPL,Procedural programming
+CPL,Structured programming
+CPL,Imperative programming language
+CPL,Multi-paradigm programming language
+CWEB,"Literate, imperative , structured"
+C,"Imperative , structured"
+C Sharp,Functional programming
+C Sharp,Structured programming
+C Sharp,Generic programming
+C Sharp,Imperative programming
+C Sharp,Event-driven programming
+C Sharp,The Task-based Asynchronous Pattern
+C Sharp,Object-oriented programming
+C Sharp,Multi-paradigm programming language
+C Sharp,Reflective programming
+C Sharp,Concurrent computing
+Cadence SKILL,Functional programming
+Cadence SKILL,Object-oriented programming
+Cameleon,Functional programming
+Caml,"multi-paradigm: functional, imperative; object-oriented in OCaml"
+Ceylon,Object-oriented programming
+Chapel,Object-oriented programming
+Chapel,Parallel programming
+Chapel,Partitioned global address space
+Charity,Purely functional programming
+Charm++,"Message-driven parallel programming, migratable objects, Object-oriented"
+Charm,Structured programming
+Chomski,Scripting language
+ChucK,Multi-paradigm programming language
+Ciao,Functional programming
+Ciao,Logic programming
+Ciao,Object-oriented programming
+Ciao,Modular programming
+Cilk,"imperative , structured, parallel"
+Citrine,Prototype-based programming
+Citrine,Object-oriented programming
+Claire,"multi-paradigm: functional, object-oriented , rule processing, reflective"
+Clean,Functional programming
+Clojure,Functional programming
+Coarray Fortran,"multi-paradigm: parallel, message passing,  imperative , structured"
+Cobra,Object-oriented programming
+Cobra,Multi-paradigm programming language
+CoffeeScript,Functional programming
+CoffeeScript,Imperative programming
+CoffeeScript,Prototype-based programming
+CoffeeScript,Multi-paradigm
+CoffeeScript,Scripting language
+ColdFusion Markup Language,Imperative programming
+ColdFusion Markup Language,Object-oriented programming
+ColorForth,Procedural programming
+ColorForth,Stack-oriented programming language
+Common Lisp,Functional programming
+Common Lisp,Procedural programming
+Common Lisp,Generic programming
+Common Lisp,Metaprogramming
+Common Lisp,Object-oriented programming
+Common Lisp,Multi-paradigm programming language
+Common Lisp,Reflective programming
+Component Pascal,Structured programming
+Component Pascal,Imperative programming
+Component Pascal,Object-oriented programming
+Component Pascal,Modular programming
+Concurrent Euclid,Functional programming
+Concurrent Euclid,Structured programming
+Concurrent Euclid,Imperative programming
+Concurrent Euclid,Multi-paradigm programming language
+Constraint Handling Rules,Constraint logic programming
+Cool,Object-oriented programming language
+Coral 66,Procedural programming
+Coral 66,Structured programming
+Coral 66,Imperative programming language
+Crystal,Object-oriented programming
+Crystal,Multi-paradigm programming language
+Curl,Markup language
+Curl,Object-oriented programming
+Curl,Multi-paradigm programming language
+Curry,"functional, logic, non-strict, modular"
+C\xcf\x89,Functional programming
+C\xcf\x89,Structured programming
+C\xcf\x89,Imperative programming
+C\xcf\x89,Event-driven programming
+C\xcf\x89,Object-oriented programming
+C\xcf\x89,Multi-paradigm programming language
+DBase,Imperative programming
+DBase,Declarative programming
+DIBOL,Procedural programming
+DIBOL,Structured programming
+DIBOL,Imperative programming language
+DIGITAL Command Language,Imperative programming
+DUP programming language,Functional programming
+DUP programming language,Interpreted language
+D,Compiled language
+D,Functional programming
+D,Procedural programming
+D,Generic programming
+D,Object-oriented programming
+D,Multi-paradigm programming language
+D,Concurrent programming
+Dart,"Multi-paradigm: scripting, object-oriented , imperative, functional"
+Dartmouth BASIC,Imperative programming
+Design By Numbers,Object-oriented programming
+Dolittle,Object oriented programming language
+Dolittle,Multi-paradigm programming language
+Draco,"imperative , structured"
+Dylan,Functional programming
+Dylan,Object-oriented programming
+Dylan,Multi-paradigm programming language
+ECL,Declarative programming
+ECL,Data-centric programming language
+ECL,Structured
+ECMAScript,Functional programming
+ECMAScript,Imperative programming
+ECMAScript,Prototype-based programming
+ECMAScript,Multi-paradigm
+EC,Procedural programming
+EC,Generic programming
+EC,Object-oriented programming
+EC,Multi-paradigm programming language
+ELAN,?
+ELI,Array programming
+E,Object-oriented programming
+E,Multi-paradigm programming language
+E,Message passing
+E,Aspect-oriented programming
+Ebda3,Functional programming
+Ebda3,Procedural programming
+Ebda3,Imperative programming
+Ebda3,Object-oriented programming
+Ebda3,Multi-paradigm programming language
+Ebda3,Reflective programming
+Eiffel,Object-oriented programming
+Elixir,Functional programming
+Elixir,Multi-paradigm programming language
+Elixir,Concurrent programming
+Elixir,Distributed programming
+Elixir,Process-oriented programming
+Elm,Functional programming
+Emacs Lisp,Functional programming
+Emacs Lisp,Metaprogramming
+Emacs Lisp,Reflective programming
+Emerald,Object-oriented programming
+Epigram,Functional programming
+Escher,Functional programming
+Escher,Logic programming
+Escher,Declarative programming
+Etoys,Prototype-based programming
+Etoys,Object-oriented programming
+Etoys,Educational programming language
+EuLisp,Functional programming
+EuLisp,Procedural programming
+EuLisp,Metaprogramming
+EuLisp,Object-oriented programming
+EuLisp,Multi-paradigm programming language
+Euclid,Functional programming
+Euclid,Structured programming
+Euclid,Imperative programming
+Euclid,Multi-paradigm programming language
+Euler,Procedural programming
+Euler,Structured programming
+Euler,Imperative programming
+Euphoria,Imperative programming
+Extempore,Functional programming
+Extempore,Multi-paradigm programming language
+Extensible Embeddable Language,Functional programming
+Extensible Embeddable Language,Imperative programming
+Extensible Embeddable Language,Object-oriented programming
+Extensible Embeddable Language,Multi-paradigm programming language
+Extensible Embeddable Language,Scripting language
+Ezhil,Interpreted language
+Ezhil,Structured programming
+Ezhil,Imperative programming
+F*,Functional programming
+F*,Imperative programming
+F*,Formal verification
+F*,Multi-paradigm programming language
+F-Script,Array programming
+F-Script,Object-oriented programming
+F-Script,Multi-paradigm programming language
+FACT,Procedural programming
+FACT,Imperative programming
+FLOW-MATIC,Imperative programming
+FL,Functional programming
+FL,Function-level programming
+FP,Function-level programming
+F,Procedural programming
+F,Modular programming
+F Sharp,Functional programming
+F Sharp,Imperative programming
+F Sharp,Metaprogramming
+F Sharp,Object-oriented programming
+F Sharp,Multi-paradigm programming language
+F Sharp,Concurrent programming
+Factor,Functional programming
+Factor,Concatenative programming language
+Factor,Multi-paradigm programming language
+Factor,Stack-oriented programming language
+Falcon,"Multi-paradigm: Procedural, object-oriented , functional, tabular, message passing"
+Fantom,Multi-paradigm programming language
+Fj\xc3\xb6lnir,"procedural, object-oriented"
+Flow chart language,Imperative programming
+Flowgorithm,Structured programming
+Flowgorithm,Imperative programming
+Forth,Procedural programming
+Forth,Concatenative programming language
+Forth,Reflection (computer science)
+Forth,Stack-oriented programming language
+Fortran,"multi-paradigm: structured, imperative , generic"
+FreeBASIC,Procedural programming
+FreeBASIC,Object-oriented programming
+Frege,non-strict
+Frenetic,"Domain-specific , reactive, modular"
+Fril,Logic programming
+FutureBASIC,Procedural programming
+G-code,"Procedural, Imperative"
+GNU E,Object-oriented programming
+Gemstone,Distributed computing
+Gemstone,Object database
+Gemstone,Distributed cache
+Gemstone,Object-oriented programming
+Gemstone,In-memory database
+Gemstone,In-Memory Processing
+Generic Java,Object-oriented programming
+Genie,Structured programming
+Genie,Imperative programming
+Genie,Object-oriented programming
+Genie,Multi-paradigm programming language
+Global Arrays,"parallel, one-sided message passing, imperative , structured"
+GluonJ,Aspect-oriented programming
+Go!,"Multi-paradigm: concurrent, logic, functional, imperative"
+Go,Compiled language
+Go,Structured programming
+Go,Imperative programming
+Go,Concurrent programming
+GrGen,Imperative programming
+GrGen,Multi-paradigm programming language
+GrGen,Declarative programming
+GrGen,Object oriented programming
+Groovy,Imperative programming
+Groovy,Object-oriented programming
+Groovy,Scripting language
+Guido van Robot,Procedural programming
+G\xc3\xb6del,Logic programming
+G\xc3\xb6del,Declarative programming
+Halide,Functional programming
+Halide,Parallel programming model
+Haml,Template engine (web)
+Handel-C,"Imperative , concurrent"
+Harbour,Functional programming
+Harbour,Imperative programming
+Harbour,Object-oriented programming
+Harbour,Multi-paradigm programming language
+Harbour,Reflective programming
+Haskell,Functional programming
+Haskell,Lazy evaluation
+Haskell,Non-strict programming language
+Haskell,Imperative programming
+Haskell,Modular programming
+Haxe,Multi-paradigm programming language
+Hop,Multi-paradigm programming language
+HyperTalk,Procedural programming
+IBM RPG,Multi-paradigm programming language
+IBM i Control Language,Imperative programming
+IDL,Array programming
+ISWIM,Functional programming
+ISWIM,Imperative programming language
+Icon,"multi-paradigm: structured, text-oriented"
+Idris,Functional programming
+Impromptu,Functional programming
+Impromptu,Multi-paradigm programming language
+Incr Tcl,Functional programming
+Incr Tcl,Imperative programming
+Incr Tcl,Event-driven programming
+Incr Tcl,Object-oriented programming
+Incr Tcl,Multi-paradigm programming language
+Information Processing Language,Assembly language
+Intel Parallel Building Blocks,"imperative , structured, parallel"
+Io,Prototype-based programming
+Io,Object-oriented programming
+Ioke,Prototype-based programming
+Ioke,Object-oriented programming
+Itk,Functional programming
+Itk,Imperative programming
+Itk,Event-driven programming
+Itk,Object-oriented programming
+Itk,Multi-paradigm programming language
+JOVIAL,Procedural programming
+JOVIAL,Structured programming
+JOVIAL,Imperative programming language
+JSONiq,Functional programming
+JSONiq,Modular programming
+JSONiq,Declarative programming
+JScript .NET,Multi-paradigm
+J,Functional programming
+J,Array programming
+J,Function-level programming
+J,Tacit programming
+J Sharp,"Object-oriented, structured, imperative"
+Janus,Concurrent constraint logic programming
+Janus,Reversible computing
+Janus,Imperative programming
+Jasmin,Assembly language
+JavaScript,"Multi-paradigm: scripting, object-oriented , imperative, functional, event-driven"
+Java,"Multi-paradigm: Object-oriented , structured, imperative, generic, reflective, concurrent"
+Joe-E,Object-capability model
+Join-pattern,Distributed programming
+Join-pattern,Concurrent computing
+Join Java,Procedural programming
+Join Java,Reflective programming
+Joule,Dataflow
+Joule,Distributed computing
+Joule,Object-oriented programming
+Joule,Multi-paradigm programming language
+Joy,Multi-paradigm programming language
+Joy,Stack-oriented programming language
+Joy,Functional programming
+Joy,Concatenative programming language
+Joyce,Structured programming
+Joyce,Concurrent programming language
+Joyce,Imperative programming
+Judoscript,Object-oriented programming
+Judoscript,Scripting language
+Julia,"Multi-paradigm: multiple dispatch , procedural, functional, meta, multistaged"
+KM programming language,Knowledge representation
+KRL,Knowledge representation
+K,Functional programming
+K,Array programming
+Karel,Procedural programming
+Kent Recursive Calculator,Functional programming
+Kojo,Functional programming
+Kojo,Object-oriented programming
+LOLCODE,Esoteric programming language
+LOOM,Knowledge representation
+LPC,Functional programming
+LPC,Procedural programming
+LPC,Prototype-based programming
+LPC,Object-oriented programming
+LPC,Multi-paradigm programming language
+Lasso,"Multi-paradigm: structured object-oriented ,
+imperative: procedural, 
+concurrent,  
+exp-oriented,
+Meta: reflective"
+Liberty BASIC,Procedural programming
+Liberty BASIC,Event-driven programming
+Limbo,Concurrent computing
+Linotte,"object-oriented , structured, and imperative"
+Lisaac,Prototype-based programming
+Lisaac,Object-oriented programming
+Lisp,Functional programming
+Lisp,Procedural programming
+Lisp,Metaprogramming
+Lisp,Multi-paradigm programming language
+Lisp,Reflection (computer science)
+Little b,Functional programming
+LiveScript,Programming paradigm
+LiveScript,Functional programming
+LiveScript,Object-oriented programming
+Logo,Functional programming
+Logo,Procedural programming
+Logo,Educational programming language
+Logo,Multi-paradigm programming language
+Logo,Reflection (computer science)
+Logtalk,Logic programming
+Lua,"Multi-paradigm: scripting, imperative , functional"
+Lucid,Dataflow
+M4,macro preprocessor
+MAD,Imperative programming
+MATH-MATIC,Imperative programming
+MIRC scripting language,Procedural programming
+MIRC scripting language,Event-driven programming
+MIVA Script,Imperative programming
+ML,Functional programming
+ML,Imperative programming
+ML,Multi-paradigm programming language
+MSX BASIC,Imperative programming
+MUMPS,Procedural programming
+M Sharp,Procedural programming
+M Sharp,Structured programming
+M Sharp,Event-driven programming
+M Sharp,Metaprogramming
+M Sharp,Object-oriented programming
+M Sharp,Multi-paradigm programming language
+Malbolge,"Esoteric, Imperative, Scalar, Value-level"
+Mary,Imperative programming
+Mercury,Functional programming
+Mercury,Logic programming
+Mercury,Object-oriented programming
+MetaPost,Imperative programming
+MetaPost,Typesetting
+MexScript,Functional programming
+MexScript,Structured programming
+MexScript,End-user development
+MexScript,Domain-specific language
+Microsoft Small Basic,Structured programming
+Microsoft Small Basic,Imperative programming
+Microsoft Small Basic,Object-oriented programming
+MiniD,Imperative programming
+MiniD,Object-oriented programming
+MiniD,Multi-paradigm programming language
+Mirah,Imperative programming
+Mirah,Object-oriented programming language
+Miranda,Functional programming
+Miranda,Lazy evaluation
+Miranda,Declarative programming
+Mizar system,Declarative programming
+Modelica,Declarative programming
+Modula-2,"imperative, structured, modular, data and procedure hiding"
+Modula-2+,"imperative, structured, modular"
+Modula-3,Procedural programming
+Modula-3,Structured programming
+Modula-3,Imperative programming
+Modula-3,Modular programming
+Monkey X,Structured programming
+Monkey X,Generic programming
+Monkey X,Imperative programming
+Monkey X,Object-oriented programming
+Monkey X,Modular programming
+Monkey X,Multi-paradigm programming language
+Monkey X,Reflection (computer science)
+Monkey X,Concurrent computing
+NESL,"parallel, functional, array"
+NIL,Functional programming
+NIL,Procedural programming
+NIL,Multi-paradigm programming language
+Neko,Structured programming
+Neko,Prototype-based programming
+Neko,Object-oriented programming
+Neko,Scripting language
+Nemerle,Functional programming
+Nemerle,Imperative programming
+Nemerle,Metaprogramming
+Nemerle,Object-oriented programming
+Nemerle,Multi-paradigm programming language
+NetLogo,Simulation language
+NetLogo,Procedural programming
+NetLogo,Computer simulation
+NetLogo,Educational programming language
+NetLogo,Multi-paradigm programming language
+NetRexx,Procedural programming
+NetRexx,Structured programming
+NetRexx,Object-oriented programming
+NetRexx,Multi-paradigm programming language
+NewLISP,Multi-paradigm
+Newspeak,Functional programming
+Newspeak,Object-oriented programming
+Newsqueak,Concurrent computing
+NewtonScript,Prototype-based programming
+NewtonScript,Object-oriented programming
+Nial,Array programming
+Nickle,Multi-paradigm programming language
+Nim,Compiled language
+Nim,Procedural programming
+Nim,Imperative programming
+Nim,Object-oriented programming
+Nim,Multi-paradigm programming language
+Nim,Concurrent programming
+Nu,Structured programming
+Nu,Imperative programming
+Nu,Object-oriented programming
+OCaml,Functional programming
+OCaml,Imperative programming
+OCaml,Object-oriented programming
+OCaml,Multi-paradigm programming language
+Oaklisp,Functional programming
+Oaklisp,Procedural programming
+Oaklisp,Multi-paradigm programming language
+Oaklisp,Object-oriented
+Oberon-2,Structured programming
+Oberon-2,Imperative programming
+Oberon-2,Object-oriented programming
+Oberon-2,Modular programming
+Oberon,Structured programming
+Oberon,Imperative programming
+Oberon,Object-oriented programming
+Oberon,Modular programming
+Object-Oriented Turing,Procedural programming
+Object-Oriented Turing,Object-oriented programming
+Object-Oriented Turing,Multi-paradigm programming language
+Object-Oriented Turing,Concurrent programming
+Object Oberon,Object-oriented programming
+Object Pascal,Functional programming
+Object Pascal,Structured programming
+Object Pascal,Generic programming
+Object Pascal,Imperative programming
+Object Pascal,Event-driven programming
+Object Pascal,Component-based software engineering
+Object Pascal,Object-oriented programming
+Object REXX,Object-oriented
+Objective-C,Class-based programming
+Objective-C,Object-oriented programming
+Objective-C,Reflection (computer science)
+Objective-J,Functional programming
+Objective-J,Imperative programming
+Objective-J,Multi-paradigm
+Objective-J,Object-oriented programming
+Objective-J,Reflection (computer science)
+Objective-J,Scripting language
+Obliq,Parallel programming
+Obliq,Prototype-based programming
+Obliq,Multi-paradigm programming language
+Occam,Concurrent programming language
+Opa,Functional programming
+Opa,Imperative programming
+Opa,Multi-paradigm programming language
+OpenMx,Structural Equation Modeling
+Open Programming Language,Structured programming
+Open Programming Language,Imperative programming
+Open Programming Language,Embedded system
+Open Roberta,Imperative programming
+Open Roberta,Event-driven programming
+OptimJ,Object-oriented programming
+Orc,Nondeterministic programming
+Orc,Concurrent programming
+Oriel,Procedural programming
+Oriel,Imperative programming
+Orwell,Functional programming
+Orwell,Lazy evaluation
+Oz,Functional programming
+Oz,Logic programming
+Oz,Concurrent programming language
+Oz,Constraint programming
+Oz,Imperative programming
+Oz,Object-oriented programming
+Oz,Multi-paradigm programming language
+Oz,Distributed programming
+P4,Compiled language
+P4,Imperative programming
+P4,Domain-specific language
+PCASTL,Imperative programming
+PCASTL,Reflective programming
+PHP,Functional programming
+PHP,Procedural programming
+PHP,Imperative programming
+PHP,Object-oriented programming
+PHP,Reflective programming
+PL/C,Procedural programming
+PL/C,Structured programming
+PL/C,Imperative programming
+PL/I,Procedural programming
+PL/I,Structured programming
+PL/I,Imperative programming
+PLEXIL,Multi-paradigm programming language
+PLEX,Procedural programming
+PLEX,Imperative programming
+PROMAL,"Imperative , structured"
+Pan,Declarative Language
+ParaSail,Compiled language
+ParaSail,Structured programming
+ParaSail,Imperative programming
+ParaSail,Object-oriented programming
+ParaSail,Concurrent programming
+Parser,"multiparadigm - macro, object-oriented"
+PascalABC.NET,Functional programming
+PascalABC.NET,Procedural programming
+PascalABC.NET,Generic programming
+PascalABC.NET,Object-oriented programming
+PascalABC.NET,Multi-paradigm programming language
+Pascal,Structured programming
+Pascal,Imperative programming
+PeopleCode,Imperative programming
+PeopleCode,Object-oriented programming
+PeopleCode,Multi-paradigm programming language
+Perl,"multi-paradigm: functional, imperative, object-oriented , reflective, procedural, event-driven, generic"
+Perl 6,Multi-paradigm
+Perl Data Language,Array programming
+PicoLisp,Functional programming
+PicoLisp,Procedural programming
+PicoLisp,Object-oriented programming
+PicoLisp,Reflective programming
+PicoLisp,Declarative programming
+PicoLisp,Meta programming
+Pico,Procedural programming
+Pico,Reflection (computer science)
+Pike,Functional programming
+Pike,Procedural programming
+Pike,Object-oriented programming
+Pike,Multi-paradigm programming language
+Pixie,Functional programming
+Pizza,Generic programming
+Pizza,Algebraic types
+Plankalk\xc3\xbcl,Procedural programming
+Plus,Structured programming
+Plus,Imperative programming
+Pnuts,Object-oriented programming
+Pnuts,Scripting language
+Polyphonic C Sharp,Functional programming
+Polyphonic C Sharp,Structured programming
+Polyphonic C Sharp,Imperative programming
+Polyphonic C Sharp,Event-driven programming
+Polyphonic C Sharp,Object-oriented programming
+Polyphonic C Sharp,Multi-paradigm programming language
+Polyphonic C Sharp,Concurrent programming
+PostScript,Procedural programming
+PostScript,Stack-based
+PostScript,Multi-paradigm programming language
+PowerShell,"Multi-paradigm: Imperative, pipeline, object-oriented, functional and reflective"
+Praspel,Design by contract
+Processing,Object-oriented programming
+Profile Scripting Language,Procedural programming
+Programming Language for Business,Procedural programming
+Programming Language for Business,Imperative programming
+Programming with Big Data in R,SPMD and MPMD
+Prograph,Dataflow programming
+Prograph,Visual programming language
+Prograph,Object-oriented programming
+Prograph,Multi-paradigm programming language
+Prolog,Logic programming
+PureBasic,Procedural programming
+PureBasic,Structured programming
+PureBasic,Imperative programming
+Pure,Functional programming
+Pure,Rewriting
+Pure,Declarative programming
+Python,Functional programming
+Python,Procedural programming
+Python,Imperative programming
+Python,Object-oriented programming
+Python,Multi-paradigm programming language
+Python,Reflective programming
+Python for S60,Imperative programming
+Python for S60,Object-oriented programming
+Python for S60,Multi-paradigm programming language
+Python for S60,Functionqal programming
+P\xe2\x80\xb2\xe2\x80\xb2,Structured programming
+P\xe2\x80\xb2\xe2\x80\xb2,Imperative programming
+QBasic,Procedural programming
+QML,Reactive programming
+QML,Multi-paradigm
+QML,Scripting language
+QML,Declarative programming
+Q,Functional programming
+Q,Array programming
+Qalb,Functional programming
+Qore,"shared memory, functional, imperative, object-oriented , procedural, functional"
+QuakeC,"imperative , structured"
+Quark Framework,"functional, non-strict, modular"
+RPL,Structured programming
+RPL,Stack-oriented programming language
+RPL,Object-oriented
+RTL/2,Structured programming
+RTL/2,Imperative programming
+R,Functional programming
+R,Procedural programming
+R,Array programming
+R,Imperative programming
+R,Object-oriented programming
+R,Multi-paradigm programming language
+R,Reflective programming
+Racket,Functional programming
+Racket,Logic programming
+Racket,Procedural programming
+Racket,Metaprogramming
+Racket,Object-oriented programming
+Racket,Modular programming
+Racket,Multi-paradigm programming language
+Racket,Reflection (computer science)
+Raptor,Structured programming
+Raptor,Imperative programming
+Rc,Imperative programming
+Rc,Pipeline programming
+Rebol,Language oriented programming
+Rebol,Functional programming
+Rebol,Data exchange language
+Rebol,Imperative programming
+Rebol,Prototype-based programming
+Red,Symbolic programming
+Red,Functional programming
+Red,Imperative programming
+Refal,Pattern-matching and Term-rewriting
+Reia,Functional programming
+Reia,Imperative programming
+Reia,Multi-paradigm programming language
+Reia,Concurrent programming
+Reia,Declarative programming
+Reia,Object-oriented programming language
+Rexx,Procedural programming
+Rexx,Structured programming
+Rexx,Multi-paradigm programming language
+RiscLua,Scripting Language
+Ruby,Functional programming
+Ruby,Imperative programming
+Ruby,Object-oriented programming
+Ruby,Multi-paradigm programming language
+Ruby,Reflective programming
+Rust,Compiled language
+Rust,Functional programming
+Rust,Structured programming
+Rust,Generic programming
+Rust,Imperative programming
+Rust,Multi-paradigm programming language
+Rust,Concurrent programming
+S2,Object-oriented programming
+S3,Structured programming
+S3,Imperative programming
+SAC programming language,Functional programming
+SAC programming language,Array programming
+SALSA,Actor model
+SAMPL,Imperative programming
+SAMPL,Multi-paradigm programming language
+SAMPL,Declarative programming
+SASL,Functional programming
+SETL,Procedural programming
+SETL,Structured programming
+SETL,Imperative programming
+SETL,Object-oriented programming
+SETL,Multi-paradigm programming language
+SISAL,Dataflow
+SISAL,Functional programming
+SK8,Object-oriented programming
+SNOBOL,Imperative programming
+SNOBOL,Unstructured programming
+SP/k,Structured programming
+SP/k,Imperative programming
+SPARK,Multi-paradigm programming language
+SPARQL,Query language
+SQL,Multi-paradigm programming language
+SQL,Declarative programming
+SQL/PSM,Multi-paradigm programming language
+STELLA,Simulation language
+STELLA,Visual programming language
+Sather,Functional programming
+Sather,Object-oriented programming
+Scala,Functional programming
+Scala,Imperative programming
+Scala,Object-oriented programming
+Scala,Multi-paradigm programming language
+Scala,Concurrent programming
+Scientific Vector Language,Multi-paradigm
+Scratch,Imperative programming
+Scratch,Event-driven programming
+Script.NET,Imperative programming
+Script.NET,Metaprogramming
+Script.NET,Scripting language
+Sed,Scripting language
+Seed7,Structured programming
+Seed7,Generic programming
+Seed7,Imperative programming
+Seed7,Object-oriented programming
+Seed7,Extensible programming
+Seed7,Multi-paradigm programming language
+Seed7,Reflective programming
+Self,object-oriented
+Sense,Event-driven programming
+Sense,Object-oriented programming
+Sense,Educational programming language
+Simula,Object-oriented programming
+Sinclair BASIC,Imperative programming
+Smalltalk,Object-oriented programming
+Snap!,Event-driven programming
+Snap!,Object-oriented programming
+Snap!,Educational programming language
+Solidity,Object-oriented programming
+Spec Sharp,Functional programming
+Spec Sharp,Structured programming
+Spec Sharp,Imperative programming
+Spec Sharp,Event-driven programming
+Spec Sharp,Object-oriented programming
+Spec Sharp,Multi-paradigm programming language
+Spec Sharp,Design by Contract
+Speedcoding,Structured programming
+Speedcoding,Generic programming
+Speedcoding,Object-oriented programming
+Split-C,"imperative , structured, parallel"
+Squeak,Object-oriented programming
+Squirrel,Functional programming
+Squirrel,Imperative programming
+Squirrel,Object-oriented programming
+Squirrel,Multi-paradigm programming language
+Squirrel,Scripting language
+Standard ML,Imperative programming
+Standard ML,Multi-paradigm programming language
+Standard ML,Functional programming language
+Standard ML of New Jersey,Imperative programming
+Standard ML of New Jersey,Multi-paradigm programming language
+Standard ML of New Jersey,Functional programming language
+StarLogo,Simulation language
+StarLogo,Procedural programming
+StarLogo,Computer simulation
+StarLogo,Educational programming language
+StarLogo,Multi-paradigm programming language
+SuperPascal,Structured programming
+SuperPascal,Imperative programming
+SuperPascal,Concurrent computing
+Swift,Protocol (object-oriented programming)
+Swift,Functional programming
+Swift,Imperative programming
+Swift,Block (programming)
+Swift,Object-oriented programming
+Swift,Multi-paradigm programming language
+SystemVerilog,Structured programming
+SystemVerilog,Object-oriented programming
+TADS,Prototype-oriented programming
+TADS,Domain-specific language
+TLA+,Action language
+TOM,Object-oriented programming
+TTM,macro preprocessor
+TUTOR,imperative
+TXL,Pattern-matching and Term-rewriting
+T,Functional programming
+T,Imperative programming
+T,Metaprogramming
+T,Object-oriented programming
+T,Multi-paradigm programming language
+Tcl,Functional programming
+Tcl,Procedural programming
+Tcl,Imperative programming
+Tcl,Event-driven programming
+Tcl,Object-oriented programming
+Tcl,Multi-paradigm programming language
+Tea,"Multi-paradigm: Functional, Object-oriented"
+ToonTalk,Concurrent constraint logic programming
+Turing+,Procedural programming
+Turing+,Object-oriented programming
+Turing+,Multi-paradigm programming language
+Turing+,Concurrent programming
+Turing,Procedural programming
+Turing,Object-oriented programming
+Turing,Multi-paradigm programming language
+TypeScript,Functional programming
+TypeScript,Structured programming
+TypeScript,Generic programming
+TypeScript,Imperative programming
+TypeScript,Object-oriented programming
+TypeScript,Multi-paradigm programming language
+TypeScript,Scripting language
+UCBLogo,Functional programming
+UCBLogo,Procedural programming
+UCBLogo,Educational programming language
+UCBLogo,Multi-paradigm programming language
+UCBLogo,Reflection (computer science)
+Umple,Object-oriented programming
+Unicon,Procedural programming
+Unicon,Object-oriented programming
+Unified Parallel C,"parallel, message passing, imperative , structured"
+Urbiscript,Functional programming
+Urbiscript,Procedural programming
+Urbiscript,Imperative programming
+Urbiscript,Event-driven programming
+Urbiscript,Object-oriented programming
+Urbiscript,Multi-paradigm programming language
+Urbiscript,Reflective programming
+VHDL,"concurrent, reactive"
+VSXu,Visual programming language
+Vala,Programming paradigm
+Vala,Structured programming
+Vala,Imperative programming
+Vala,Object-oriented programming
+Verilog,Structured programming
+Vilnius BASIC,Imperative programming
+Vilnius BASIC,Algorithmic programming
+VisSim,Simulation language
+VisSim,Visual programming language
+VisSim,Modular
+Visual Basic,Object-based and Event-driven
+Visual Basic .NET,"Multi-paradigm: structured, imperative, object-oriented, declarative, generic, reflective and event-driven"
+Visual Basic for Applications,Multi-paradigm programming language
+Visual Logic,Structured programming
+Visual Logic,Imperative programming
+Vvvv,Visual programming language
+WebAssembly,Expression-oriented programming language
+WebMethods Flow,Graphical programming
+WebMethods Flow,Structured programming
+WebMethods Flow,Object-oriented programming
+Whiley,Imperative programming
+Whiley,Functional programming language
+Wolfram Language,Programming paradigm
+Wolfram Language,Functional programming
+Wolfram Language,Procedural programming
+Wolfram Language,Array programming
+Wolfram Language,Term-rewriting
+X10,Object-oriented programming
+XBLite,Procedural language
+XC,Real-time computing
+XC,Parallel programming
+XC,Imperative programming
+XC,Concurrent programming
+XC,Distributed programming
+XC,Multi-core processor
+XL,Functional programming
+XL,Imperative programming
+XL,Concept programming
+XL,Multi-paradigm programming language
+XOTcl,Functional programming
+XOTcl,Imperative programming
+XOTcl,Event-driven programming
+XOTcl,Object-oriented programming
+XOTcl,Multi-paradigm programming language
+XPath,Query language
+XQuery,Functional programming
+XQuery,Modular programming
+XQuery,Declarative programming
+XSB,Logic Programming
+XSLT,Declarative programming
+XUL,Declarative
+Xtend,Functional programming
+Xtend,Imperative programming
+Xtend,Object-oriented programming
+Yoix,Procedural programming
+Yoix,Multi-paradigm
+Yoix,Object-oriented programming
+ZPL,Array programming

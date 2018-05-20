@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{%load staticfiles%}
+
+{% block stylesheet %}
+	<style>
+    .thumbnail{
+      height:180px;
+      border-radius:10px !important;
+      width:300px;
+      border-width: 4px;
+      z-index: 5;
+      box-shadow: 8px 8px 8px;
+    }
+    .thumbnail:hover{
+        box-shadow: 0px 0px 20px;
+        z-index: 2;
+        transform: scale(1.1);
+        }
+
+	</style>
+
+{% endblock %}
+
+
+{%block maincontent%}
+	<div class="container">
+
+ {% if query %}
+    <h2>{{jobs|length}} Results for "{{query|escape}}" found:</h2>
+    {% if jobs %}
+      <ul>
+    <div class="container">
+
+      {%for job in jobs%}
+
+        {% if forloop.first %}
+          <div class ="row">
+        {% endif %}
+
+            <div class="col-sm-4 col-lg-4 col-md-4 ">
+              <a href="{%url  'details' id=job.id%}">
+              {%if job.deadline > now%}
+              <div class="thumbnail" style="border-color:rgb(111, 213, 127); margin:30px;">
+              {%else%}
+              <div class="thumbnail" style="border-color:rgb(252, 91, 63); margin:30px;">
+              {%endif%}
+                  <div class="caption">
+
+
+                      <h3 style="font-weight:bold;">{{job.title}}</h3>
+
+
+                </div>
+              </div>
+              </a>
+
+          </div>
+
+
+          {% if forloop.counter|divisibleby:3 %}
+            </div><br>
+          <div class="row">
+
+          {% endif %}
+
+          {% if forloop.last %}
+            </div><br>
+          {% endif %}
+
+    {% endfor %}
+
+    </div>
+
+  </div>
+  </div>
+
+      </ul>
+    
+    {% endif %}
+    {%else%} No result found.
+ {% endif %}
+
+	</div>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{%load staticfiles%}
+
+{% block stylesheet %}
+	<style>
+/*		.left{
+			float: left;
+		}
+
+		.right{
+			float: left;
+			margin-left: 100px;
+		}*/
+
+	</style>
+
+{% endblock %}
+
+
+{%block maincontent%}
+	<div class="stats-header">
+	<h2 class="text-center">iJORMS in Figures</h2>
+	
+
+			
+	     		{{ div | safe }}
+	     		{{ script | safe }}
+	    		
+	    	
+
+
+	    </div>
+
+
+{% endblock %}

@@ -1,0 +1,353 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load humanize %}
+
+{%block stylesheet%}
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,500,700' rel='stylesheet' type='text/css'>
+
+
+<style>
+
+    #one, #two, #three{
+        height: 300px;
+        width: 300px;
+        margin:45px;
+        position:relative;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .thumbnail{
+      height:180px;
+      border-radius:10px !important;
+      width:300px;
+      border-width: 4px;
+      z-index: 5;
+      box-shadow: 0px 0px 8px;
+    }
+    .thumbnail:hover{
+        box-shadow: 0px 0px 20px;
+        z-index: 2;
+        transform: scale(1.1);
+        }
+
+    .landing{
+      width: 100%;
+      min-height: 755px;
+      margin: -30px auto 30px;
+      padding: 10px 0;
+      background: url(../static/UI/img/landing2.jpeg)  center  fixed;
+      background-size: 100%;
+    }
+
+    .typed_wrap {
+          display: block;
+
+          width: 900px;
+          height: auto;
+          padding: 30px;
+
+          /*centers it in the .banner*/
+          position: sticky;
+          top: 35%;
+          left: 30%;
+          -webkit-transform: translate(-50%,-50%);
+          -moz-transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+          -o-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+      }
+
+.typed_wrap h1 {
+  display: inline;
+}
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+  content: '|';
+  display: inline;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+  display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+</style>
+{%endblock%}
+
+{%block javascript%}
+
+<script>
+function getCookie(c_name){
+        if (document.cookie.length > 0){
+            c_start = document.cookie.indexOf(c_name + "=");
+            if (c_start != -1){
+                c_start = c_start + c_name.length + 1;
+                c_end = document.cookie.indexOf(";", c_start);
+                if (c_end == -1) c_end = document.cookie.length;
+                return unescape(document.cookie.substring(c_start,c_end));
+            }
+        }
+        return "";
+    }
+
+$(function () {
+    $.ajaxSetup({
+        headers: { "X-CSRFToken": getCookie("csrftoken") }
+    });
+});
+
+
+function update_profile(){
+    $.ajax({
+        url: '/update_profile/',
+        type: 'POST',
+        data: {'csrfmiddlewaretoken': '{{ csrf_token }}'},
+        success: function(){
+               console.log("la thik chha");
+            },
+        error: function(){
+               console.log("la khattam");
+            }
+    });
+}
+
+AnimateCircle("one", 1);
+AnimateCircle("two", 1);
+AnimateCircle("three", 1);
+
+
+function AnimateCircle(container_id, animatePercentage) {
+    var startColor = '#FC5B3F';
+    var endColor = '#6FD57F';
+
+    var element = document.getElementById(container_id);
+    var circle = new ProgressBar.Circle(element, {
+        color: startColor,
+        trailColor: '#eee',
+        trailWidth: 5,
+        duration: 2000,
+        easing: 'bounce',
+        strokeWidth: 5,
+        text: {
+            value: element.firstElementChild.innerText,
+            className: 'progressbar__label',
+            autoStyleContainer: false,
+
+        },
+        // Set default step function for all animate calls
+        step: function (state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+        }
+    });
+
+    circle.animate(animatePercentage, {
+        from: {
+            color: startColor
+        },
+        to: {
+            color: endColor
+        }
+    });
+}
+
+
+$(function(){
+  $(".typed").typed({
+    strings: ["Intelligent Resume Matching.", "Semantic Analysis.", "HR Solutions."],
+    stringsElement: null,
+    // typing speed
+    typeSpeed: 30,
+    //time before typing starts
+    startDelay: 1200,
+    //backspacing speed
+    backSpeed: 20,
+    //time before backspacing
+    backDelay: 500,
+    //loop
+    loop: true,
+    //false=infinite
+    loopCount:10,
+    //show cursor
+    showCursor: false,
+    //character fo cursor
+    cursorChar: "|",
+    //attribute to type (null == text)
+    attr: null,
+    //either html or text
+    contentType: 'html',
+    //call when done callback function
+    callback: function() {},
+    //starting callback function before each string
+    preStringTyped: function() {},
+    //callback for every typed string
+    onStringTyped: function() {},
+    //callback for reset
+    resetCallback: function(){}
+  });
+});
+</script>
+
+{%endblock%}
+
+
+{% block maincontent %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <br><br>
+        <strong>{{ applicant.applicant.username }}</strong><br><br>
+        {{ applicant.applicant.email }}<br><br>
+        <a href="{% url 'vitae' 1 %}"><button type="button" class="btn btn-success">Update Profile</button></a>
+        </div>
+
+        <div class="col-md-4 col-md-offset-4">
+            <img src="{{ applicant.photo.url }}" class="img-circle" height=200px; width=200px;>
+        </div>
+    </div>
+<hr>
+
+    {% if jobs_applied_remain %}
+      <h3>Jobs Applied for with deadline remaining:</h3>
+    {% for job in jobs_applied_remain %}
+
+        {% if forloop.first %}
+          <div class ="row">
+        {% endif %}
+
+            <div class="col-sm-4 col-lg-4 col-md-4 ">
+              <a href="{%url  'details' id=job.job.id%}">
+{#                  {{ job.job.id }}#}
+              <div class="thumbnail" style="border-color:rgb(111, 213, 127); margin: 30px;">
+
+                  <div class="caption">
+
+
+                      <h4 style="font-weight:bold;">{{job.job.title}}</h4>
+                       <p>{{job.job.number_of_vacancies}} vacancies remaining </p>
+
+                      <p>Ends in {{job.job.deadline}}</p>
+                      <h4>Rank {{ job.rank }}</h4>
+
+                </div>
+              </div>
+              </a>
+
+          </div>
+
+
+
+          {% if forloop.counter|divisibleby:4 %}
+            </div><br>
+          <div class="row">
+
+          {% endif %}
+
+          {% if forloop.last %}
+            </div><br>
+          {% endif %}
+
+    {% endfor %}
+
+    {% else %}
+        You have not applied for any jobs with deadline intact.
+
+    {% endif %}
+
+
+<hr>
+{% if jobs_applied_finished %}
+
+    <h3>Jobs Applied for with deadline ended </h3>
+    {% for job in jobs_applied_finished %}
+        {% if forloop.first %}
+          <div class ="row">
+        {% endif %}
+
+            <div class="col-sm-4 col-lg-4 col-md-4 ">
+              <a href="{%url  'details' id=job.job.id%}">
+              <div class="thumbnail" style="border-color:rgb(252, 91, 63); margin:30px;">
+
+                  <div class="caption">
+
+
+                      <h4 style="font-weight:bold;">{{ job.job.title }}</h4>
+
+
+                      <p>Ended on {{ job.job.deadline }}</p>
+                      <h4>Rank {{job.rank}}</h4>
+                </div>
+              </div>
+              </a>
+
+          </div>
+
+
+
+          {% if forloop.counter|divisibleby:4 %}
+            </div><br>
+          <div class="row">
+
+          {% endif %}
+
+          {% if forloop.last %}
+            </div><br>
+          {% endif %}
+
+    {% endfor %}
+    {% else %}
+    You have not applied for any job with deadline ended
+
+    {% endif %}
+
+</div>
+
+
+
+<!-- Modal -->
+<div id="changeResume" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        {{ resumeForm.as_p }}
+          {{ profileForm.as_p }}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

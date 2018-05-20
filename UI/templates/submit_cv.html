@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block stylesheet %}
+    <style>
+    .tester{
+        margin-left:110px;
+    }
+    </style>
+{% endblock %}
+
+{% block maincontent %}
+<div class="container">
+{% if error_message %}
+
+{{error_message }}
+
+{% endif %}
+
+	<form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+	    {% csrf_token %}
+	    {% include 'form_template.html' %}
+        <br>
+	    <div class="form-group tester">
+	    	<div>You have not submitted your form yet.</div>
+	        <div>
+	            <button type="submit" class="btn btn-success">Submit</button>
+	        </div>
+	    </div>
+	</form>
+</div>
+{% endblock %}
