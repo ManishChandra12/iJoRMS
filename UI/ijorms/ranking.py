@@ -4,33 +4,7 @@ from .InformationExtraction import getData
 from ..models import JobApplicant
 
 
-
-# userSkill = 'http://dbpedia.org/resource/Human_capital http://dbpedia.org/resource/Computer_virus http://dbpedia.org/resource/Spring_Framework http://dbpedia.org/resource/Virtuoso http://dbpedia.org/resource/Rugby_league_positions http://dbpedia.org/resource/Cascading_Style_Sheets http://dbpedia.org/resource/Agile_software_development http://dbpedia.org/resource/Technology http://dbpedia.org/resource/Web_application http://dbpedia.org/resource/JavaScript http://dbpedia.org/resource/MySQL http://dbpedia.org/resource/Model–view–controller http://dbpedia.org/resource/Sun_Microsystems http://dbpedia.org/resource/1984_Summer_Olympics http://dbpedia.org/resource/JavaServer_Pages http://dbpedia.org/resource/Cognition http://dbpedia.org/resource/Java_(programming_language'.split(' ')
-#
-#
-# userWE = 'http://dbpedia.org/resource/University_of_Göttingen http://dbpedia.org/resource/Engineer http://dbpedia.org/resource/Software http://dbpedia.org/resource/Infosys http://dbpedia.org/resource/Internship http://dbpedia.org/resource/Academia http://dbpedia.org/resource/Computer_programming'.split(' ')
-#
-# userEducation = "education\nb.e.; in; computer; science\nanna; university; chennai".split('\n')
-#
-# userCertification = "".split('\n')
-#
-# jobSkill = 'Java, HTML, JavaScript, CSS, Spark framework, jQuery, React'.lower().split(',')
-#
-# jobWE = 'Java programming, Versioning control tools, Bamboo, RESTful, OSGi'.lower().split(',')
-#
-# jobEducation = "Master's in Computer Science".lower().split(',')
-#
-# jobCertification = "".lower().split(',')
-
 def ranking(jobApplicant, applicant, job):
-    # try:
-        # userSkill = (applicant.skill_link).split(' ')
-        # userWE = (applicant.work_experience_link).split(' ')
-        # userEducation = (applicant.applicant_Edu).split('\n')
-        # if(applicant.certification_link != None):
-        #     userCertification = (applicant.certification_link).split('\n')
-        # else:
-        #     userCertification = [""]
 
     while(not applicant.applicant_Edu):
         continue
@@ -72,9 +46,6 @@ def ranking(jobApplicant, applicant, job):
         allApplicants[ss].save()
     print("Out of Thread")
     return
-
-    # except:
-    #     print("Error Ranking")
 
 
 def matchEducation(userEducation, jobEducation):

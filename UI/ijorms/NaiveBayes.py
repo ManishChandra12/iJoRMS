@@ -52,18 +52,20 @@ def generateHash(trainingSet):     #generate hash table of probabilities
     # storeLengths(lengths)
     return hashTable, lengths
 
-# def storeLengths(lengths):
-#     with open('Lengths.csv','w') as out:
-#         writer = csv.writer(out)
-#         for entry in lengths:
-#             writer.writerow([entry, lengths[entry]])
-#     out.close()
 
-# def storeModel(hashTable):
-#     with open ('NaiveBayesModel.csv','w') as out:
-#         writer = csv.writer(out)
-#         for entry in hashTable:
-#             writer.writerow([entry, hashTable[entry]])
+def storeLengths(lengths):
+    with open('Lengths.csv','w') as out:
+        writer = csv.writer(out)
+        for entry in lengths:
+            writer.writerow([entry, lengths[entry]])
+    out.close()
+
+
+def storeModel(hashTable):
+    with open ('NaiveBayesModel.csv','w') as out:
+        writer = csv.writer(out)
+        for entry in hashTable:
+            writer.writerow([entry, hashTable[entry]])
 
 
 def getPredictions(hashtable, lengths, testSet):     #get predictions for all the sentences
@@ -104,7 +106,6 @@ def getPredictions(hashtable, lengths, testSet):     #get predictions for all th
     predictions['skill'] = predictionsSkill
     prob['skill'] = probSkill
 
-
     for i in testSet['workExperience']:
         if(len(i) != 0):
             result, probab = predict(hashtable, lengths, i)
@@ -128,7 +129,6 @@ def predict(hashtable, lengths, inVector):      #prediction for one sentence
         if (bestLabel is None or probability > bestProb):
             bestProb = probability
             bestLabel = classValue
-
 
     return bestLabel, bestProb
 

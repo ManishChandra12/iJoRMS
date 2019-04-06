@@ -15,8 +15,6 @@ def tfidf(trainingSet, testSet):
     return predictions, weights
 
 
-
-
 def calculateTfWeight(trainingSet): #calculation of the TF weights
     education, certification, workExperience, skill = getAsList(trainingSet)
     tfEducation = {}
@@ -54,27 +52,26 @@ def calculateTfWeight(trainingSet): #calculation of the TF weights
     return tfEducation, tfWorkExperience, tfSkill, tfCertification
 
 
-# def storeTFModel(tfCertification, tfEducation, tfSkill, tfWorkExperience):
-#     with open('TFCertificationModel.csv', 'w') as out1:
-#         writer1 = csv.writer(out1)
-#         for entry1 in tfCertification:
-#             writer1.writerow([entry1, tfCertification[entry1]])
-#     out1.close()
-#     with open('TFEducationModel.csv', 'w') as out2:
-#         writer2 = csv.writer(out2)
-#         for entry2 in tfEducation:
-#             writer2.writerow([entry2, tfEducation[entry2]])
-#     out2.close()
-#     with open('TFSkillModel.csv', 'w') as out3:
-#         writer3 = csv.writer(out3)
-#         for entry3 in tfSkill:
-#             writer3.writerow([entry3, tfSkill[entry3]])
-#     out3.close()
-#     with open('TFExperienceModel.csv', 'w') as out4:
-#         writer4 = csv.writer(out4)
-#         for entry4 in tfWorkExperience:
-#             writer4.writerow([entry4, tfWorkExperience[entry4]])
-#     out4.close()
+def storeTFModel(tfCertification, tfEducation, tfSkill, tfWorkExperience):
+    with open('TFCertificationModel.csv', 'w') as out1:
+        writer1 = csv.writer(out1)
+        for entry1 in tfCertification:
+            writer1.writerow([entry1, tfCertification[entry1]])
+
+    with open('TFEducationModel.csv', 'w') as out2:
+        writer2 = csv.writer(out2)
+        for entry2 in tfEducation:
+            writer2.writerow([entry2, tfEducation[entry2]])
+
+    with open('TFSkillModel.csv', 'w') as out3:
+        writer3 = csv.writer(out3)
+        for entry3 in tfSkill:
+            writer3.writerow([entry3, tfSkill[entry3]])
+
+    with open('TFExperienceModel.csv', 'w') as out4:
+        writer4 = csv.writer(out4)
+        for entry4 in tfWorkExperience:
+            writer4.writerow([entry4, tfWorkExperience[entry4]])
 
 
 def calculateIdfWeight(trainingSet):    #calculation of IDF weights
@@ -98,12 +95,12 @@ def calculateIdfWeight(trainingSet):    #calculation of IDF weights
     return Idf
 
 
-# def storeIDFModel(Idf):
-#     with open('IDFModel.csv', 'w') as out:
-#         writer = csv.writer(out)
-#         for entry in Idf:
-#             writer.writerow([entry, Idf[entry]])
-#     out.close()
+def storeIDFModel(Idf):
+    with open('IDFModel.csv', 'w') as out:
+        writer = csv.writer(out)
+        for entry in Idf:
+            writer.writerow([entry, Idf[entry]])
+
 
 def getPredictionsTfIdf(testSet, tfEducation, tfWorkExperience, tfSkill, tfCertification, Idf):     #get predictions for all the sentences
     predictions = {}

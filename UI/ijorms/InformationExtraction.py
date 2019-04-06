@@ -3,6 +3,7 @@ import requests
 from xml.etree import ElementTree
 import sys
 from SPARQLWrapper import SPARQLWrapper, JSON
+nltk.download('averaged_perceptron_tagger')
 
 
 def getData(query):
@@ -12,234 +13,6 @@ def getData(query):
     sparql.setQuery(query)  # the previous query as a literal string
 
     return sparql.query().convert()
-
-# def extractSkills(skills):
-#     IEskills = []
-#     news = []
-#     for i in skills:
-#         IEskill = []
-#         new = []
-#         p = nltk.pos_tag(i)
-#         for j in range(len(p)):
-#             if p[j][1] == 'NN' or p[j][1] == 'NNS' or p[j][1] == 'NNP' or p[j][1] == 'NNPS':
-#                 IEskill.append(p[j][0])
-#                 if j < len(p) - 2 and (
-#                                 p[j + 1][1] == 'NN' or p[j + 1][1] == 'NNS' or p[j + 1][1] == 'NNP' or p[j + 1][
-#                     1] == 'NNPS') and (
-#                                 p[j + 2][1] == 'NN' or p[j + 2][1] == 'NNS' or p[j + 2][1] == 'NNP' or p[j + 2][
-#                     1] == 'NNPS'):
-#                     new.append(p[j][0] + ' ' + p[j + 1][0] + ' ' + p[j + 2][0])
-#                 if j < len(p) - 1 and (
-#                                 p[j + 1][1] == 'NN' or p[j + 1][1] == 'NNS' or p[j + 1][1] == 'NNP' or p[j + 1][
-#                     1] == 'NNPS'):
-#                     new.append(p[j][0] + ' ' + p[j + 1][0])
-#         IEskills.append(IEskill)
-#         news.append(new)
-#     IEskills += news
-#     # print(IEskills)
-#     #
-#     # finals = []
-#     # for j in IEskills:
-#     #     final = []
-#     #     for k in j:
-#     #         if (ont.__contains__(k)):
-#     #             final.append(k)
-#     #     finals.append(final)
-#     # print(finals)
-#     seed = ["programming", "language", "interface", "library", "operating system"]
-#     finals = []
-#     done = False
-#     for i in IEskills:
-#         final = []
-#         for j in i:
-#             url = "http://lookup.dbpedia.org/api/search/KeywordSearch?QueryString=" + j
-#             response = requests.get(url)
-#             tree = ElementTree.fromstring(response.content)
-#             for iii in range(len(tree)):
-#                 # print(j, tree[i][2].text)
-#                 if(tree[iii][2].text != None):
-#                     pp = (tree[iii][2].text).lower()
-#                     for se in seed:
-#                         if pp.__contains__(se):
-#                             final.append(j)
-#                             done = True
-#                             break
-#                     if (done == True):
-#                         done = False
-#                         break
-#         # if (len(final) != 0):
-#         finals.append(final)
-#     for ii in range(len(news)):
-#         for dup in finals[ii + len(news)]:
-#             if finals[ii].__contains__(dup.split(' ')[0]):
-#                 ind = finals[ii].index(dup.split(' ')[0])
-#                 if len(dup.split(' ')) == 3 and ind < len(finals[ii]) - 2 and finals[ii][ind + 1] == dup.split(' ')[
-#                     1] and finals[ii][ind + 2] == dup.split(' ')[2]:
-#                     finals[ii].pop(ind)
-#                     finals[ii].pop(ind)
-#                     finals[ii].pop(ind)
-#                     finals[ii].insert(ind, dup)
-#                     finals[ii + len(news)].pop(finals[ii + len(news)].index(dup) + 1)
-#                     finals[ii + len(news)].pop(finals[ii + len(news)].index(dup) + 1)
-#                 elif ind < len(finals[ii]) - 1 and finals[ii][ind + 1] == dup.split(' ')[1]:
-#                     finals[ii].pop(ind)
-#                     finals[ii].pop(ind)
-#                     finals[ii].insert(ind, dup)
-#                 else:
-#                     finals[ii].pop(ind)
-#                     finals[ii].insert(ind, dup)
-#     finalest = finals[0:len(news)]
-#     IEs = []
-#     for i in finalest:
-#         if len(i) != 0:
-#             IEs.append(i)
-#     # print(finalest)
-#     return IEs
-#     # print(finals)
-#
-# def extractWorkExperience(workExperience):
-#     IEWorkExperiences = []
-#     news = []
-#     for i in workExperience:
-#         IEWorkExperience = []
-#         new = []
-#         p = nltk.pos_tag(i)
-#         # print(p)
-#         for j in range(len(p)):
-#             if p[j][1] == 'NN' or p[j][1] == 'NNS' or p[j][1] == 'NNP' or p[j][1] == 'NNPS':
-#                 IEWorkExperience.append(p[j][0])
-#                 if j < len(p) - 2 and (
-#                                 p[j + 1][1] == 'NN' or p[j + 1][1] == 'NNS' or p[j + 1][1] == 'NNP' or p[j + 1][
-#                     1] == 'NNPS') and (
-#                                 p[j + 2][1] == 'NN' or p[j + 2][1] == 'NNS' or p[j + 2][1] == 'NNP' or p[j + 2][
-#                     1] == 'NNPS'):
-#                     new.append(p[j][0] + ' ' + p[j + 1][0] + ' ' + p[j + 2][0])
-#                 if j < len(p) - 1 and (
-#                                 p[j + 1][1] == 'NN' or p[j + 1][1] == 'NNS' or p[j + 1][1] == 'NNP' or p[j + 1][
-#                     1] == 'NNPS'):
-#                     new.append(p[j][0] + ' ' + p[j + 1][0])
-#         IEWorkExperiences.append(IEWorkExperience)
-#         # if (len(new) != 0):
-#         news.append(new)
-#     IEWorkExperiences += (news)
-#     # print(IEWorkExperiences)
-#     # print(IEWorkExperiences)
-#
-#     seed = ["programming", "language", "interface", "library", "operating system", "professional", "profession"]
-#     finals = []
-#     done = False
-#     for i in IEWorkExperiences:
-#         final = []
-#         for j in i:
-#             url = "http://lookup.dbpedia.org/api/search/KeywordSearch?QueryString=" + j
-#             response = requests.get(url)
-#             tree = ElementTree.fromstring(response.content)
-#             for iii in range(len(tree)):
-#                 # print(j, tree[i][1].text)
-#                 if (tree[iii][2].text != None):
-#                     pp = (tree[iii][2].text).lower()
-#                     for se in seed:
-#                         if pp.__contains__(se):
-#                             final.append(j)
-#                             done = True
-#                             break
-#                     if (done == True):
-#                         done = False
-#                         break
-#         # if (len(final) != 0):
-#         finals.append(final)
-#     for ii in range(len(news)):
-#         for dup in finals[ii + len(news)]:
-#             if finals[ii].__contains__(dup.split(' ')[0]):
-#                 ind = finals[ii].index(dup.split(' ')[0])
-#                 if len(dup.split(' ')) == 3 and ind < len(finals[ii]) - 2 and finals[ii][ind + 1] == dup.split(' ')[
-#                     1] and finals[ii][ind + 2] == dup.split(' ')[2]:
-#                     finals[ii].pop(ind)
-#                     finals[ii].pop(ind)
-#                     finals[ii].pop(ind)
-#                     finals[ii].insert(ind, dup)
-#                     finals[ii + len(news)].pop(finals[ii + len(news)].index(dup) + 1)
-#                     finals[ii + len(news)].pop(finals[ii + len(news)].index(dup) + 1)
-#                 elif ind < len(finals[ii]) - 1 and finals[ii][ind + 1] == dup.split(' ')[1]:
-#                     finals[ii].pop(ind)
-#                     finals[ii].pop(ind)
-#                     finals[ii].insert(ind, dup)
-#                 else:
-#                     finals[ii].pop(ind)
-#                     finals[ii].insert(ind, dup)
-#     finalest = finals[0:len(news)]
-#     IEw = []
-#     for i in finalest:
-#         if len(i) != 0:
-#             IEw.append(i)
-#     # print(finalest)
-#     return IEw
-#
-# def extractEducation(education):
-#     seed = ["degree", "university"]
-#     finals = []
-#     done = False
-#     for i in education:
-#         new = []
-#         p = nltk.pos_tag(i)
-#         for j in range(len(p)):
-#             if (p[j][1] != 'CD'):
-#                 new.append(p[j][0])
-#         # strng = ''
-#         # for j in new:
-#         #     strng += j + ' '
-#         # print(strng.strip())
-#         for strng in new:
-#             url = "http://lookup.dbpedia.org/api/search/KeywordSearch?QueryString=" + strng
-#             response = requests.get(url)
-#             tree = ElementTree.fromstring(response.content)
-#             for k in range(len(tree)):
-#                 # print(j, tree[k][1].text)
-#                 if (tree[k][2].text != None):
-#                     pp = tree[k][2].text.lower()
-#                     for se in seed:
-#                         if pp.__contains__(se):
-#                             finals.append(i)
-#                             done = True
-#                             break
-#                     if (done == True):
-#                         break
-#             if (done == True):
-#                 done = False
-#                 break
-#     return finals
-#
-# def extractCertification(certification):
-#     seed = ["certification"]
-#     finals = []
-#     done = False
-#     for i in certification:
-#         new = []
-#         p = nltk.pos_tag(i)
-#         for j in range(len(p)):
-#             if (p[j][1] != 'CD'):
-#                 new.append(p[j][0])
-#         strng = ''
-#         for j in new:
-#             strng += j + ' '
-#         url = "http://lookup.dbpedia.org/api/search/KeywordSearch?QueryString=" + strng.strip()
-#         response = requests.get(url)
-#         tree = ElementTree.fromstring(response.content)
-#         for k in range(len(tree)):
-#             # print(j, tree[k][1].text)
-#             if (tree[k][2].text != None):
-#                 pp = tree[k][2].text.lower()
-#                 for se in seed:
-#                     if pp.__contains__(se):
-#                         finals.append(i)
-#                         done = True
-#                         break
-#                 if (done == True):
-#                     done = False
-#                     break
-#     return finals
-
-
 
 
 def extractSkills(skills):
@@ -264,15 +37,7 @@ def extractSkills(skills):
         IEskills.append(IEskill)
         news.append(new)
     IEskills += news
-    #
-    # finals = []
-    # for j in IEskills:
-    #     final = []
-    #     for k in j:
-    #         if (ont.__contains__(k)):
-    #             final.append(k)
-    #     finals.append(final)
-    # print(finals)
+
     seed = ["software", "programming", "language", "network", "security", "computer", "framework", "interface", "library", "operating system", "skill"]
     finals = []
     links = []
@@ -314,8 +79,8 @@ def extractSkills(skills):
                     finals[ii].pop(ind)
                     finals[ii].pop(ind)
                     finals[ii].insert(ind, dup)
-                    finals[ii+len(news)].pop(finals[ii+len(news)].index(dup)+1)
-                    finals[ii + len(news)].pop(finals[ii + len(news)].index(dup) + 1)
+                    # finals[ii+len(news)].pop(finals[ii+len(news)].index(dup)+1)
+                    # finals[ii + len(news)].pop(finals[ii + len(news)].index(dup) + 1)
                 elif ind < len(finals[ii])-1 and finals[ii][ind+1] == dup.split(' ')[1]:
                     finals[ii].pop(ind)
                     finals[ii].pop(ind)
@@ -374,7 +139,6 @@ def extractWorkExperience(workExperience):
         news.append(new)
     IEWorkExperiences += (news)
     # print(IEWorkExperiences)
-    # print(IEWorkExperiences)
 
     seed = ["software", "programming", "language", "network", "security", "computer", "framework", "interface", "library", "operating system", "professional", "profession"]
     finals = []
@@ -402,7 +166,7 @@ def extractWorkExperience(workExperience):
                                 links.append(tree[iii][1].text)
                                 done = True
                                 break
-                if (done == True):
+                if done:
                     done = False
                     break
         # if (len(final) != 0):
@@ -416,8 +180,8 @@ def extractWorkExperience(workExperience):
                     finals[ii].pop(ind)
                     finals[ii].pop(ind)
                     finals[ii].insert(ind, dup)
-                    finals[ii+len(news)].pop(finals[ii+len(news)].index(dup)+1)
-                    finals[ii + len(news)].pop(finals[ii + len(news)].index(dup) + 1)
+                    # finals[ii+len(news)].pop(finals[ii+len(news)].index(dup)+1)
+                    # finals[ii + len(news)].pop(finals[ii + len(news)].index(dup) + 1)
                 elif ind < len(finals[ii])-1 and finals[ii][ind+1] == dup.split(' ')[1]:
                     finals[ii].pop(ind)
                     finals[ii].pop(ind)
@@ -464,10 +228,7 @@ def extractEducation(education):
         for j in range(len(p)):
             if(p[j][1] != 'CD'):
                 new.append(p[j][0])
-        # strng = ''
-        # for j in new:
-        #     strng += j + ' '
-        # print(strng.strip())
+
         for strng in new:
             # url = "http://lookup.dbpedia.org/api/search/KeywordSearch?QueryString=" + strng
             url = "http://lookup.dbpedia-spotlight.org/api/search/PrefixSearch?QueryClass=&MaxHits=5&QueryString=" + strng

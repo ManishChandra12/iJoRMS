@@ -214,7 +214,7 @@
 "('accredited', 'certification')",0.001194743
 "('maintained', 'workExperience')",0.000906618
 "('90%', 'education')",0.000267487
-"('school’s', 'workExperience')",0.000113327
+"('schoolï¿½s', 'workExperience')",0.000113327
 "('bellevue', 'workExperience')",0.000226655
 "('sccs', 'skill')",0.000191369
 "('81.375%', 'education')",0.000267487
@@ -428,7 +428,7 @@
 "('engine.', 'workExperience')",0.000169991
 "('oscp', 'certification')",0.000298686
 "('cortex', 'certification')",0.000597372
-"('bachelor’s', 'education')",0.000267487
+"('bachelorï¿½s', 'education')",0.000267487
 "('research', 'education')",0.000267487
 "('expanded', 'workExperience')",0.000169991
 "('deployment', 'certification')",0.000298686
@@ -545,7 +545,7 @@
 "('emacs', 'skill')",0.000287054
 "('points', 'workExperience')",0.000169991
 "('released', 'skill')",0.000191369
-"('children’s', 'education')",0.000267487
+"('childrenï¿½s', 'education')",0.000267487
 "('oriented', 'skill')",0.000861162
 "('geico', 'workExperience')",0.000113327
 "('3.2', 'workExperience')",0.000113327
@@ -1082,7 +1082,7 @@
 "('carolina', 'education')",0.000267487
 "('b.s.', 'education')",0.001337435
 "('derived', 'workExperience')",0.000169991
-"('client’s', 'workExperience')",0.000113327
+"('clientï¿½s', 'workExperience')",0.000113327
 "('cyber', 'certification')",0.000298686
 "('initiated', 'workExperience')",0.000226655
 "('node.js', 'workExperience')",0.000283318
@@ -1520,7 +1520,7 @@
 "('clinical', 'workExperience')",0.000113327
 "('connection', 'workExperience')",0.000113327
 "('computer', 'workExperience')",0.001756573
-"('months’', 'workExperience')",0.000113327
+"('monthsï¿½', 'workExperience')",0.000113327
 "('written', 'workExperience')",0.000453309
 "('node', 'skill')",0.000382738
 "('building', 'workExperience')",0.000509973
@@ -1648,7 +1648,7 @@
 "('java', 'workExperience')",0.002096555
 "('marketplace', 'workExperience')",0.000169991
 "('epicor', 'workExperience')",0.000113327
-"('xavier’s', 'education')",0.001069948
+"('xavierï¿½s', 'education')",0.001069948
 "('xml', 'workExperience')",0.0006233
 "('day', 'workExperience')",0.000396646
 "('denormalization', 'skill')",0.000191369
@@ -1881,7 +1881,7 @@
 "('drop', 'workExperience')",0.000226655
 "('across', 'workExperience')",0.0006233
 "('partners.', 'workExperience')",0.000113327
-"('experience', 'skill')",1.91E-05
+"('experience', 'skill')",0.0000191
 "('broker', 'skill')",0.000191369
 "('excellent', 'workExperience')",0.000113327
 "('vaultize', 'workExperience')",0.000169991
@@ -2004,7 +2004,7 @@
 "('blender', 'skill')",0.000478423
 "('integration', 'skill')",0.000382738
 "('modern', 'workExperience')",0.000169991
-"('council’s', 'certification')",0.000298686
+"('councilï¿½s', 'certification')",0.000298686
 "('spartin', 'workExperience')",0.000113327
 "('ado', 'skill')",0.000191369
 "('adapter', 'skill')",0.000191369
@@ -2265,7 +2265,7 @@
 "('mapping', 'workExperience')",0.000113327
 "('systems', 'certification')",0.001493429
 "('history', 'workExperience')",0.000113327
-"('api’s', 'workExperience')",0.000113327
+"('apiï¿½s', 'workExperience')",0.000113327
 "('value', 'workExperience')",0.000113327
 "('thru', 'workExperience')",0.000113327
 "('offices', 'workExperience')",0.000113327
@@ -2385,7 +2385,7 @@
 "('moon""', 'workExperience')",0.000113327
 "('vendor', 'workExperience')",0.000283318
 "('mca', 'certification')",0.000298686
-"('company’s', 'workExperience')",0.000113327
+"('companyï¿½s', 'workExperience')",0.000113327
 "('formatted', 'workExperience')",0.000169991
 "('switches.', 'workExperience')",0.000113327
 "('power', 'skill')",0.000191369
@@ -3133,7 +3133,7 @@
 "('use', 'workExperience')",0.000736627
 "('rft', 'skill')",0.000191369
 "('representative', 'workExperience')",0.000453309
-"('“rapidpro”', 'workExperience')",0.000113327
+"('ï¿½rapidproï¿½', 'workExperience')",0.000113327
 "('ltd.', 'workExperience')",0.000169991
 "('delegates', 'skill')",0.000191369
 "('raid', 'workExperience')",0.000113327
@@ -4217,7 +4217,7 @@ skill,0.25
 "('79.5%', 'education')",0.000267487
 "('tuned', 'workExperience')",0.000113327
 "('jose', 'education')",0.00040123
-"('•', 'workExperience')",0.000113327
+"('ï¿½', 'workExperience')",0.000113327
 "('maintainable', 'skill')",0.000191369
 "('java1.8', 'skill')",0.000191369
 "('either', 'workExperience')",0.000113327
@@ -4627,7 +4627,7 @@ skill,0.25
 "(""mary's"", 'education')",0.000267487
 "('winforms', 'workExperience')",0.000169991
 "('onslaught', 'skill')",0.000191369
-"('master’s', 'workExperience')",0.000113327
+"('masterï¿½s', 'workExperience')",0.000113327
 "('r', 'certification')",0.000298686
 "('shutterstock', 'workExperience')",0.000113327
 "('dev', 'skill')",0.000191369
@@ -4785,7 +4785,7 @@ certification,0.25
 "('calculator', 'skill')",0.000191369
 "('specified', 'workExperience')",0.000226655
 "('byasi', 'education')",0.000267487
-"('vaultize’s', 'workExperience')",0.000113327
+"('vaultizeï¿½s', 'workExperience')",0.000113327
 "('started', 'workExperience')",0.000113327
 "('seconds', 'workExperience')",0.000113327
 "('1997', 'workExperience')",0.000566636
@@ -4825,7 +4825,7 @@ certification,0.25
 "('ibm', 'workExperience')",0.001359927
 "('defense', 'certification')",0.000298686
 "('telephone', 'skill')",0.000382738
-"('unicef’s', 'workExperience')",0.000113327
+"('unicefï¿½s', 'workExperience')",0.000113327
 "('outlook', 'workExperience')",0.000113327
 "('modules.', 'workExperience')",0.000113327
 "('subcontract', 'workExperience')",0.000113327
@@ -5198,7 +5198,7 @@ workExperience,0.25
 "('3ware', 'workExperience')",0.000113327
 "('expectations', 'workExperience')",0.000113327
 "('peers', 'workExperience')",0.000226655
-"('patient’s', 'workExperience')",0.000113327
+"('patientï¿½s', 'workExperience')",0.000113327
 "('tasked', 'workExperience')",0.000226655
 "('domino', 'workExperience')",0.000169991
 "('show', 'workExperience')",0.000113327

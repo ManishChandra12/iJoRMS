@@ -1,9 +1,8 @@
-import os
-os.environ['CLASSPATH'] = "C:/Users/Sweta/Desktop/Final Year Project/Integrated-Final/major/UI/ijorms/tika-app-1.14.jar"
-from jnius import autoclass # Import the Java classes we are going to need
+# from jnius import autoclass # Import the Java classes we are going to need
+import tika
+tika.initVM()
+from tika import parser
 # from nltk.tag import StanfordNERTagger
-import nltk
-import csv
 import copy
 from ast import literal_eval
 from .Dataset import *
@@ -66,22 +65,12 @@ def classifiers():
 
         NBPrediction, NBProbability = sentenceClassifierNB(copy.deepcopy(trainingSet), copy.deepcopy(testSet))
         truePositiveNB, trueNegativeNB, falsePositiveNB, falseNegativeNB, accuracyNBCertification, accuracyNBEducation, accuracyNBSkill, accuracyNBWorkExperience, fmeasureNBCertification, fmeasureNBEducation, fmeasureNBSkill, fmeasureNBWorkExperience = performanceMeasure(NBPrediction)
-        totalTruePositiveNB['certification'] += truePositiveNB['certification']
-        totalTruePositiveNB['education'] += truePositiveNB['education']
-        totalTruePositiveNB['skill'] += truePositiveNB['skill']
-        totalTruePositiveNB['workExperience'] += truePositiveNB['workExperience']
-        totalTrueNegativeNB['certification'] += trueNegativeNB['certification']
-        totalTrueNegativeNB['education'] += trueNegativeNB['education']
-        totalTrueNegativeNB['skill'] += trueNegativeNB['skill']
-        totalTrueNegativeNB['workExperience'] += trueNegativeNB['workExperience']
-        totalFalsePositiveNB['certification'] += falsePositiveNB['certification']
-        totalFalsePositiveNB['education'] += falsePositiveNB['education']
-        totalFalsePositiveNB['skill'] += falsePositiveNB['skill']
-        totalFalsePositiveNB['workExperience'] += falsePositiveNB['workExperience']
-        totalFalseNegativeNB['certification'] += falseNegativeNB['certification']
-        totalFalseNegativeNB['education'] += falseNegativeNB['education']
-        totalFalseNegativeNB['skill'] += falseNegativeNB['skill']
-        totalFalseNegativeNB['workExperience'] += falseNegativeNB['workExperience']
+
+        for i in ['certification', 'education', 'skill', 'workExperience']:
+            totalTruePositiveNB[i] += truePositiveNB[i]
+            totalTrueNegativeNB[i] += trueNegativeNB[i]
+            totalFalsePositiveNB[i] += falsePositiveNB[i]
+            totalFalseNegativeNB[i] += falseNegativeNB[i]
 
         totalFmeasureNBCertification += fmeasureNBCertification
         totalFmeasureNBEducation += fmeasureNBEducation
@@ -94,22 +83,12 @@ def classifiers():
 
         TfIdfPrediction, TfIdfWeight = tfidf(copy.deepcopy(trainingSet), copy.deepcopy(testSet))
         truePositiveTfIdf, trueNegativeTfIdf, falsePositiveTfIdf, falseNegativeTfIdf, accuracyTfIdfCertification, accuracyTfIdfEducation, accuracyTfIdfSkill, accuracyTfIdfWorkExperience, fmeasureTfIdfCertification, fmeasureTfIdfEducation, fmeasureTfIdfSkill, fmeasureTfIdfWorkExperience = performanceMeasure(TfIdfPrediction)
-        totalTruePositiveTfIdf['certification'] += truePositiveTfIdf['certification']
-        totalTruePositiveTfIdf['education'] += truePositiveTfIdf['education']
-        totalTruePositiveTfIdf['skill'] += truePositiveTfIdf['skill']
-        totalTruePositiveTfIdf['workExperience'] += truePositiveTfIdf['workExperience']
-        totalTrueNegativeTfIdf['certification'] += trueNegativeTfIdf['certification']
-        totalTrueNegativeTfIdf['education'] += trueNegativeTfIdf['education']
-        totalTrueNegativeTfIdf['skill'] += trueNegativeTfIdf['skill']
-        totalTrueNegativeTfIdf['workExperience'] += trueNegativeTfIdf['workExperience']
-        totalFalsePositiveTfIdf['certification'] += falsePositiveTfIdf['certification']
-        totalFalsePositiveTfIdf['education'] += falsePositiveTfIdf['education']
-        totalFalsePositiveTfIdf['skill'] += falsePositiveTfIdf['skill']
-        totalFalsePositiveTfIdf['workExperience'] += falsePositiveTfIdf['workExperience']
-        totalFalseNegativeTfIdf['certification'] += falseNegativeTfIdf['certification']
-        totalFalseNegativeTfIdf['education'] += falseNegativeTfIdf['education']
-        totalFalseNegativeTfIdf['skill'] += falseNegativeTfIdf['skill']
-        totalFalseNegativeTfIdf['workExperience'] += falseNegativeTfIdf['workExperience']
+
+        for i in ['certification', 'education', 'skill', 'workExperience']:
+            totalTruePositiveTfIdf[i] += truePositiveTfIdf[i]
+            totalTrueNegativeTfIdf[i] += trueNegativeTfIdf[i]
+            totalFalsePositiveTfIdf[i] += falsePositiveTfIdf[i]
+            totalFalseNegativeTfIdf[i] += falseNegativeTfIdf[i]
 
         totalFmeasureTfIdfCertification += fmeasureTfIdfCertification
         totalFmeasureTfIdfEducation += fmeasureTfIdfEducation
@@ -153,23 +132,27 @@ def classifiers():
     # finalFmeasureBagWorkExperience = totalFmeasureBagWorkExperience * 0.1
 
 
-# def NaiveBayesModel():
-#     data = readDataset()
-#     generateHash(data)
+def NaiveBayesModel():
+    data = readDataset()
+    generateHash(data)
 
-# def TFModel():
-#     data = readDataset()
-#     calculateTfWeight(data)
-#     calculateIdfWeight(data)
+
+def TFModel():
+    data = readDataset()
+    calculateTfWeight(data)
+    calculateIdfWeight(data)
+
 
 def getText(filename):       # get plain text using Apache Tika
-    Tika = autoclass('org.apache.tika.Tika')
-    Metadata = autoclass('org.apache.tika.metadata.Metadata')
-    FileInputStream = autoclass('java.io.FileInputStream')
+    # Tika = autoclass('org.apache.tika.Tika')
+    # Metadata = autoclass('org.apache.tika.metadata.Metadata')
+    # FileInputStream = autoclass('java.io.FileInputStream')
 
-    tika = Tika()
-    meta = Metadata()
-    text = tika.parseToString(FileInputStream(filename), meta)
+    # tika = Tika()
+    # meta = Metadata()
+    # text = tika.parseToString(FileInputStream(filename), meta)
+    parsed = parser.from_file(filename)
+    text = parsed["content"]
     return text
 
 
@@ -191,7 +174,6 @@ def preprocess(content):   #preprocess the test resume to get tokens
     return tokens            #improve the preprocessing: remove () maybe...
 
 
-
 def loadAll():
     hashTable = {}
     lengths = {}
@@ -200,7 +182,7 @@ def loadAll():
     tfEducation = {}
     tfSkill = {}
     tfWorkExperience = {}
-    with open('C:/Users/Sweta/Desktop/Final Year Project/Integrated-Final/major/UI/ijorms/NaiveBayesModel.csv', 'r') as inp:
+    with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'NaiveBayesModel.csv'), 'r') as inp:
         reader = list(csv.reader(inp))
         # i[0] kina gareko vanda csv file ma skill, workexp, etc ko chhutai rakheko chha, aru ko vane tuple ma rakehko
         # chha, like so '(keyword, class)', prob_value ani hashtable ma rakhne ho
@@ -209,44 +191,47 @@ def loadAll():
                 hashTable[i[0]] = float(i[1])
             else:
                 hashTable[literal_eval(i[0])] = float(i[1]) #literal eval le chai tuple mai rakhidinchha
-    inp.close()
-    with open('C:/Users/Sweta/Desktop/Final Year Project/Integrated-Final/major/UI/ijorms/Lengths.csv', 'r') as inp:
+
+    with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'Lengths.csv'), 'r') as inp:
         reader = list(csv.reader(inp))
         for i in reader:
             lengths[i[0]] = float(i[1])
-    inp.close()
-    with open('C:/Users/Sweta/Desktop/Final Year Project/Integrated-Final/major/UI/ijorms/IDFModel.csv', 'r') as inp:
+
+    with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'IDFModel.csv'), 'r') as inp:
         reader = list(csv.reader(inp))
         for i in reader:
             Idf[i[0]] = float(i[1])
-    inp.close()
-    with open('C:/Users/Sweta/Desktop/Final Year Project/Integrated-Final/major/UI/ijorms/TFCertificationModel.csv', 'r') as inp:
+
+    with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TFCertificationModel.csv'), 'r') as inp:
         reader = list(csv.reader(inp))
         for i in reader:
             tfCertification[i[0]] = float(i[1])
-    inp.close()
-    with open('C:/Users/Sweta/Desktop/Final Year Project/Integrated-Final/major/UI/ijorms/TFEducationModel.csv', 'r') as inp:
+
+    with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TFEducationModel.csv'), 'r') as inp:
         reader = list(csv.reader(inp))
         for i in reader:
             tfEducation[i[0]] = float(i[1])
-    inp.close()
-    with open('C:/Users/Sweta/Desktop/Final Year Project/Integrated-Final/major/UI/ijorms/TFSkillModel.csv', 'r') as inp:
+
+    with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TFSkillModel.csv'), 'r') as inp:
         reader = list(csv.reader(inp))
         for i in reader:
             tfSkill[i[0]] = float(i[1])
-    inp.close()
-    with open('C:/Users/Sweta/Desktop/Final Year Project/Integrated-Final/major/UI/ijorms/TFExperienceModel.csv', 'r') as inp:
+
+    with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TFExperienceModel.csv'), 'r') as inp:
         reader = list(csv.reader(inp))
         for i in reader:
             tfWorkExperience[i[0]] = float(i[1])
-    inp.close()
+
     return hashTable, lengths, Idf, tfCertification, tfEducation, tfSkill, tfWorkExperience
 
+
 def main(filename):
-    # NaiveBayesModel()
-    # TFModel()
-    # classifiers()
-    # filename = "C:\\Users\\Sweta\\Desktop\\MajorProject\\resume1.doc"  # test resume
+    train = False
+    if train:
+        NaiveBayesModel()
+        TFModel()
+        classifiers()
+
     content = getText(filename)
     tokens = preprocess(content)
     # hash table ma chai featture/class ko probability rakhya chha
@@ -264,7 +249,7 @@ def main(filename):
     IEskills, ontologySkill = extractSkills(result['skill'])  ##information extract garda gardai ontology pani banai rako chha
     print(IEskills)
     IEWorkExperience, ontologyWorkExperience = extractWorkExperience(result['workExperience'])
-    print (IEWorkExperience)
+    print(IEWorkExperience)
     IEeducation = extractEducation(result['education'])
     print(IEeducation)
     IEcertification, linksCertification = extractCertification(result['certification'])
@@ -272,5 +257,5 @@ def main(filename):
     return IEskills, ontologySkill, IEWorkExperience, ontologyWorkExperience, IEeducation, IEcertification, linksCertification
 
 
-
-# main()
+if __name__ == '__main__':
+    main()

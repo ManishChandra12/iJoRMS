@@ -1,10 +1,11 @@
 import csv
+import os
 import random
 from nltk.corpus import stopwords
 
 
 def readDataset():  #tokenize the dataset and group them into respective class
-    with open('C:\\Users\\Manish\\Desktop\\MajorProject\\Datasets\\dataset.csv') as csvfile:    #read CSV file
+    with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'dataset.csv')) as csvfile:    #read CSV file
         dataset = list(csv.reader(csvfile, delimiter=','))
     preprocessDataset(dataset)
     data = {'education':[], 'workExperience':[], 'skill':[], 'certification':[]}
